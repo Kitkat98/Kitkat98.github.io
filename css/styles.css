@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 244, 98, 58;
+  --bs-primary-rgb: 79, 43, 240;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #f4623a;
-  --bs-link-hover-color: #c34e2e;
+  --bs-link-color: #4F2BF0;
+  --bs-link-hover-color: #5b3af0;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -2846,10 +2846,10 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #f4623a;
+  --bs-btn-bg: #4f2bf0;
   --bs-btn-border-color: #f4623a;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #cf5331;
+  --bs-btn-hover-bg: #5b3af0;
   --bs-btn-hover-border-color: #c34e2e;
   --bs-btn-focus-shadow-rgb: 246, 122, 88;
   --bs-btn-active-color: #fff;
@@ -6656,8 +6656,8 @@ textarea.form-control-lg {
 }
 
 .text-bg-primary {
-  color: #fff !important;
-  background-color: RGBA(244, 98, 58, var(--bs-bg-opacity, 1)) !important;
+  color: #4f2bf0 !important;
+  background-color: RGBA(79, 43, 240, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
@@ -10856,7 +10856,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #f4623a;
+  background-color: #4f2bf0;
   opacity: 1;
 }
 
@@ -10875,17 +10875,17 @@ hr.divider-light {
   color: #212529;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #6c757d;
+  color: #4f2bf0;
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   font-size: 0.9rem;
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #f4623a;
+  color: #4f2bf0;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: #4f2bf0 !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -10922,14 +10922,14 @@ hr.divider-light {
     color: #212529;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
-    color: #f4623a;
+    color: #5b3af0;
   }
 }
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(92, 77, 66, 0.4) 100%), url("../assets/img/Background.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10958,14 +10958,14 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
-#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
+#CV.container-fluid, #CV.container-sm, #CV.container-md, #CV.container-lg, #CV.container-xl, #CV.container-xxl {
   max-width: 1920px;
 }
-#portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box, #portfolio .container-xxl .portfolio-box {
+#CV.container-fluid .CV-box, #CV.container-sm .CV-box, #CV.container-md .CV-box, #CV.container-lg .CV-box, #CV.container-xl .CV-box, #CV.container-xxl .CV-box {
   position: relative;
   display: block;
 }
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption, #portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+#CV.container-fluid .CV-box .CV-box-caption, #CV.container-sm .CV-box .CV-box-caption, #CV.container-md .CV-box .CV-box-caption, #CV.container-lg .CV-box .CV-box-caption, #CV.container-xl .CV-box .CV-box-caption, #CV.container-xxl .CV-box .CV-box-caption {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10981,15 +10981,23 @@ header.masthead h1, header.masthead .h1 {
   transition: opacity 0.25s ease;
   text-align: center;
 }
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
+#CV.container-fluid .CV-box .CV-box-caption .project-category, #CV.container-sm .CV-box .CV-box-caption .project-category, #CV.container-md .CV-box .CV-box-caption .project-category, #CV.container-lg .CV-box .CV-box-caption .project-category, #CV.container-xl .CV-box .CV-box-caption .project-category, #CV.container-xxl .CV-box .CV-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
 }
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+#CV.container-fluid .CV-box .CV-box-caption .project-name, #CV.container-sm .CV-box .CV-box-caption .project-name, #CV.container-md .CV-box .CV-box-caption .project-name, #CV.container-lg .CV-box .CV-box-caption .project-name, #CV.container-xl .CV-box .CV-box-caption .project-name, #CV.container-xxl .CV-box .CV-box-caption .project-name {
   font-size: 1.2rem;
 }
-#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
+#CV.container-fluid .CV-box:hover .CV-box-caption, #CV.container-sm .CV-box:hover .CV-box-caption, #CV.container-md .CV-box:hover .CV-box-caption, #CV.container-lg .CV-box:hover .CV-box-caption, #CV.container-xl .CV-box:hover .CV-box-caption, #CV.container-xxl .CV-box:hover .CV-box-caption {
   opacity: 1;
+}
+
+.logo {
+  width: 7rem;
+  height: 4rem;
+  margin: 0.00000001rem;
+  box-sizing: border-box;
+  margin-top: 0;
 }
